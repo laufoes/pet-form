@@ -4,7 +4,7 @@ import { IoIosPaw } from 'react-icons/io';
 export default function Dashboard() {
     return(
         <div className={styles.dashboard}>
-            <h1 className={styles.dashboad__titulo}>
+            <h1 className={styles.dashboard__titulo}>
             cadastre seu pet
             &nbsp; 
             <IoIosPaw size={30} />

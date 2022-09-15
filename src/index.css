@@ -1,0 +1,8 @@
+body{
+    font-family: 'Varela', sans-serif;
+    background: linear-gradient(45deg, rgba(238,111,87,1) 0%, rgba(246,245,245,1) 100%);
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.15rem;
+    color: #145374;
+}
