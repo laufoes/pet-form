@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import '../../styles/variaveis';
 
 body{
     font-family: 'Varela', sans-serif;
@@ -9,7 +10,7 @@ body{
     font-size: 1.15rem;
     color: #145374;
     .formulario {
-        background-color: #F6F5F5;
+        background-color: $cor-de-fundo;
         width: 30vw;
         height: auto;
         padding: 4rem;
@@ -19,18 +20,10 @@ body{
             font-family: 'Titan One', cursive;
             font-size: 2rem;
             letter-spacing: 0.15rem;
-            color: #145374;
+            color: $cor-principal;
             margin-bottom: 2rem;
-            text-align: center;
-        }
-        &__botao {
-            background-color: #EE6F57;
-            border: 1px #EE6F57 solid;
-            color: white;
-            border-radius: 8px;
-            width: 100%;
-            padding: 0.5rem;
-            margin-top: 1.5rem;
+            padding-bottom: 0.25rem;
+            border-bottom: 1px solid $cor-principal;
         }
     }
 }

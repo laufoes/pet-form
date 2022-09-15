@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import '../../../styles/variaveis';
+
+label{
+    font-family: 'Varela', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.container {
+    svg path {
+        stroke: $cor-principal;
+    }
+    background-color: white;
+    border: 1px $borda-input solid;
+    border-radius: 8px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    &__input {
+        width: 95%;
+        border: none;
+        &::-webkit-input-placeholder {
+            color: $texto-input;
+        }
+    }
+}

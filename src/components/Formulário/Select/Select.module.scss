@@ -1,0 +1,49 @@
+@import '../../../styles/variaveis';
+
+label{
+    font-family: 'Varela', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.container {
+    background-color: white;
+    border: 1px $borda-input solid;
+    border-radius: 8px;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1.5rem;
+    color: $texto-input;
+    position: relative;
+    &__ativo {
+        background-color: $borda-input;
+        color: white;
+        border: none;
+    }
+    &__opcoes{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        &:active{
+            display: flex;
+        }
+    }
+    cursor: pointer;
+    &__opcao{
+        display: flex;
+        align-items: center;
+        height: 2.5rem;
+        background-color: white;
+        padding-left: 0.5rem;
+        &:hover{
+            background-color: $borda-input;
+            color: white;
+        }
+    }
+}

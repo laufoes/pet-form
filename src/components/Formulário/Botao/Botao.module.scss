@@ -1,0 +1,11 @@
+@import '../../../styles/variaveis.scss';
+
+.botao {
+    background-color: $cor-destaque;
+    border: 1px $cor-destaque solid;
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+}
