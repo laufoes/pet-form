@@ -8,6 +8,10 @@ export default function Formulario() {
             <form>
                 <label htmlFor="certificado">Adicione um novo certificado</label>
                 <Lista />
+                <button
+                    className={styles.formulario__botao}>
+                    Salvar certificados
+                </button>
             </form>
         </div>
         )
