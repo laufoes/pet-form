@@ -4,6 +4,7 @@ import Input from './Input';
 import { IoIosPaw } from 'react-icons/io'
 import Select from './Select';
 import { useState } from 'react';
+import Dashboard from './Dashboard';
 
 export default function Formulario() {
     const [ especie, setEspecie ] = useState('');
@@ -41,6 +42,7 @@ return(
                 {/* select idade em anos */}
                 <Botao btnText="Adicionar pet"/>
             </form>
+            <Dashboard />
     </div>
     )
 }

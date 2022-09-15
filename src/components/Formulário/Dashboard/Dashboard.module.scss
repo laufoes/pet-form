@@ -1,12 +1,7 @@
-@import '../../styles/variaveis';
+@import 'styles/variaveis';
 
 .dashboard {
-    background-color: $cor-de-fundo;
-    width: 30vw;
-    height: auto;
-    padding: 4rem;
-    margin: 5vh auto auto;
-    border-radius: 24px;
+    margin-top: 3rem;
     &__titulo {
         font-family: 'Titan One', cursive;
         font-size: 2rem;

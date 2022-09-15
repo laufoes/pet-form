@@ -1,0 +1,27 @@
+@import 'styles/variaveis';
+
+.cartao{
+    width: 12rem;
+    height: 12rem;
+    border: 1px solid $borda-input;
+    box-shadow: 6px 6px 6px rgba(238,111,87, 0.3);
+    border-radius: 16px;
+    background-color: white;
+    padding: 0.25rem;
+    &__titulo{
+        font-family: 'Titan One', cursive;
+        letter-spacing: 0.1rem;
+        z-index: 2;
+    }
+    &__bg{
+        background-color: rgba(238,111,87, 0.4);
+        width: 75%;
+        height: 75%;
+        border-radius: 50%;
+        z-index: 1;
+        margin: 1.2rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
