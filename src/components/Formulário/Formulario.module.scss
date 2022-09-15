@@ -1,4 +1,26 @@
-.formulario {
-    width: 50vw;
-    height: auto;
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+body{
+    font-family: 'Varela', sans-serif;
+    background: linear-gradient(45deg, rgba(238,111,87,1) 0%, rgba(246,245,245,1) 100%);
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.15rem;
+    color: #145374;
+    .formulario {
+        background-color: #F6F5F5;
+        width: 30vw;
+        height: auto;
+        padding: 4rem;
+        margin: 5vh auto auto;
+        border-radius: 24px;
+        &__titulo {
+            font-family: 'Titan One', cursive;
+            font-size: 2rem;
+            letter-spacing: 0.15rem;
+            color: #145374;
+            margin-bottom: 2rem;
+        }
+    }
 }

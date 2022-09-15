@@ -1,17 +1,14 @@
-import { GrFormAdd } from 'react-icons/gr';
 import styles from './Formulario.module.scss';
+import Lista from './Lista';
 
 export default function Formulario() {
     return(
         <div className={styles.formulario}>
-            <h1>Organize seus certificados!</h1>
-            <div>
-                <label htmlFor="">Adicione seu certificado</label>
-                <div>
-                    <input type="text" />
-                    <GrFormAdd />
-                </div>
-            </div>
+            <h1 className={styles.formulario__titulo}>Organize seus certificados!</h1>
+            <form>
+                <label htmlFor="certificado">Adicione um novo certificado</label>
+                <Lista />
+            </form>
         </div>
-    )
-}
+        )
+    }
