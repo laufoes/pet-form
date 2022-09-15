@@ -1,6 +1,9 @@
 @import '../../../styles/variaveis.scss';
 
 .botao {
+    svg path {
+        stroke: white;
+    }
     background-color: $cor-destaque;
     border: 1px $cor-destaque solid;
     color: white;
@@ -8,4 +11,13 @@
     width: 100%;
     padding: 0.5rem;
     margin-top: 1.5rem;
+    &:hover{
+        transform: scale(1.05);
+        transition: ease-in-out 200ms;
+        color: $cor-destaque;
+        background-color: white;
+        svg path {
+            stroke: $cor-destaque;
+        }
+    }
 }
