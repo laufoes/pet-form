@@ -39,7 +39,7 @@ return(
                     icon={false}
                 />
                 {/* select idade em anos */}
-                <Botao />
+                <Botao btnText="Adicionar pet"/>
             </form>
     </div>
     )

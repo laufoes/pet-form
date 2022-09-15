@@ -1,12 +1,16 @@
 import styles from './Botao.module.scss';
 
-export default function Botao() {
+interface Props {
+    btnText: string
+}
+
+export default function Botao({ btnText }: Props) {
     return(
         <button
         className={styles.botao}
         type="submit"
         >
-        Salvar certificados
+        {btnText}
         </button>
     )
 }
