@@ -1,4 +1,7 @@
 .container {
+    svg path {
+        stroke: #145374;
+    }
     background-color: white;
     border: 1px #cdcaca solid;
     border-radius: 8px;
@@ -10,8 +13,5 @@
     &__input {
         width: 95%;
         border: none;
-    }
-    &__icon {
-        stroke: #EE6F57; //como muda cor do icone??
     }
 }

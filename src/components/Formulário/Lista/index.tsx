@@ -11,7 +11,7 @@ export default function Lista() {
             className={styles.container__input}
             />
             <GrFormAdd
-            className={styles.container__icon}
+            color="white" fontSize="1.5em" 
             />
         </div>
     )
