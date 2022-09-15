@@ -1,0 +1,19 @@
+@import '../../styles/variaveis';
+
+.dashboard {
+    background-color: $cor-de-fundo;
+    width: 30vw;
+    height: auto;
+    padding: 4rem;
+    margin: 5vh auto auto;
+    border-radius: 24px;
+    &__titulo {
+        font-family: 'Titan One', cursive;
+        font-size: 2rem;
+        letter-spacing: 0.15rem;
+        color: $cor-principal;
+        margin-bottom: 2rem;
+        padding-bottom: 0.25rem;
+        border-bottom: 1px solid $cor-principal;
+    }
+}
