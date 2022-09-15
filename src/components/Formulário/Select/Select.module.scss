@@ -28,9 +28,9 @@ label{
         flex-direction: column;
         position: absolute;
         left: 0;
-        top: 100%;
+        top: 94%;
         width: 100%;
-        &:active{
+        &__ativo{
             display: flex;
         }
     }
@@ -40,10 +40,10 @@ label{
         align-items: center;
         height: 2.5rem;
         background-color: white;
+        color: $texto-input;
         padding-left: 0.5rem;
         &:hover{
             background-color: $borda-input;
-            color: white;
         }
     }
 }

@@ -3,8 +3,10 @@ import styles from './Formulario.module.scss';
 import Input from './Input';
 import { IoIosPaw } from 'react-icons/io'
 import Select from './Select';
+import { useState } from 'react';
 
 export default function Formulario() {
+    const [ especie, setEspecie ] = useState('');
 
     const enviaFormulario = (evento: React.FormEvent) => {
         evento.preventDefault();
@@ -27,6 +29,8 @@ return(
                 />
                 <Select
                     name="espécie"
+                    especie={especie}
+                    setEspecie={setEspecie}
                 />
                 <Input 
                     type="text"
