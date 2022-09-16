@@ -10,17 +10,17 @@ export default function Formulario() {
     const [ nome, setNome ] = useState('');
     const [ especie, setEspecie ] = useState('');
     const [ raca, setRaca ] = useState('');
+    const [ dashboard, setDashboard ] = useState(false);
 
-    // function onChange(evento: any) {
-    //     const { name, value } = evento.target.value;
-    // }
-    // const alteraValor = evento: React.ChangeEvent<HTMLInputElement) => {
-
-    // }
+    const atualizaDashboard = () => {
+        if(nome && especie && raca !== '') {
+            setDashboard(true);
+        }
+    };
     const enviaFormulario = (evento: React.FormEvent) => {
         evento.preventDefault();
+        atualizaDashboard();
     }
-
 return(
     <div className={styles.formulario}>
         <h1 className={styles.formulario__titulo}>
@@ -29,7 +29,7 @@ return(
             &nbsp; 
             cadastre seu pet
             </h1>
-            <form onSubmit={enviaFormulario}>
+            <form onSubmit={(enviaFormulario)}>
                 <Input 
                     type="text"
                     name="nome do pet"
@@ -49,10 +49,9 @@ return(
                     raca={raca}
                     setRaca={setRaca}
                 />
-                {/* select idade em anos */}
                 <Botao btnText="Adicionar pet"/>
             </form>
-            <Dashboard nome={nome} especie={especie} raca={raca}/>
+            {dashboard ? <Dashboard nome={nome} especie={especie} raca={raca}/> : null}
     </div>
     )
 }
