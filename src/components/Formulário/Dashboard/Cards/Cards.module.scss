@@ -24,4 +24,16 @@
         flex-direction: column;
         justify-content: space-between;
     }
+    svg path{
+        cursor: pointer;
+        &:hover{
+            stroke: transparent;
+            fill: $cor-destaque;
+            transform: scale(1.03);
+            transition: ease-in-out 200ms;
+        }
+    }
+    &__icones{
+        margin-top: 1.5rem;
+    }
 }

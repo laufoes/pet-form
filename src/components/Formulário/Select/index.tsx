@@ -7,7 +7,8 @@ import { useState } from 'react';
 interface Props {
     name: string,
     especie: string,
-    setEspecie: React.Dispatch<React.SetStateAction<string>>
+    setEspecie: React.Dispatch<React.SetStateAction<string>>,
+    // onChange: React.ChangeEventHandler<HTMLInputElement> 
 }
 
 export default function Select({ name, especie, setEspecie }: Props) {

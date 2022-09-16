@@ -1,14 +1,22 @@
 import Botao from './Botao';
 import styles from './Formulario.module.scss';
 import Input from './Input';
-import { IoIosPaw } from 'react-icons/io'
 import Select from './Select';
-import { useState } from 'react';
 import Dashboard from './Dashboard';
+import { useState } from 'react';
+import { IoIosPaw } from 'react-icons/io';
 
 export default function Formulario() {
+    const [ nome, setNome ] = useState('');
     const [ especie, setEspecie ] = useState('');
+    const [ raca, setRaca ] = useState('');
 
+    // function onChange(evento: any) {
+    //     const { name, value } = evento.target.value;
+    // }
+    // const alteraValor = evento: React.ChangeEvent<HTMLInputElement) => {
+
+    // }
     const enviaFormulario = (evento: React.FormEvent) => {
         evento.preventDefault();
     }
@@ -26,7 +34,8 @@ return(
                     type="text"
                     name="nome do pet"
                     placeholder="Insira o nome do pet"
-                    icon={false}
+                    nome={nome}
+                    setNome={setNome}
                 />
                 <Select
                     name="espécie"
@@ -35,14 +44,15 @@ return(
                 />
                 <Input 
                     type="text"
-                    name="raça"
+                    name="Raca"
                     placeholder="Insira a raça do pet"
-                    icon={false}
+                    raca={raca}
+                    setRaca={setRaca}
                 />
                 {/* select idade em anos */}
                 <Botao btnText="Adicionar pet"/>
             </form>
-            <Dashboard />
+            <Dashboard nome={nome} especie={especie} raca={raca}/>
     </div>
     )
 }
